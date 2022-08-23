@@ -1,0 +1,15 @@
+
+
+ion-button[color="dark"]{
+    text-transform: initial;
+}
+
+//WHITE BACKGROUND
+// ion-content{
+//     --background: var( --ion-color-primary-contrast);
+// }
+
+//GREEN BACKGROUNDD
+ion-content{
+    --background: var( --ion-color-success);
+}
