@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HeroPageRoutingModule } from './hero-routing.module';
+import { AddCallPageRoutingModule } from './add-call-routing.module';
 
-import { HeroPage } from './hero.page';
+import { AddCallPage } from './add-call.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeroPageRoutingModule
+    AddCallPageRoutingModule
   ],
-  declarations: [HeroPage]
+  declarations: [AddCallPage]
 })
-export class HeroPageModule {}
+export class AddCallPageModule {}

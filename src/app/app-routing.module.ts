@@ -13,10 +13,10 @@ const routes: Routes = [
     path: 'loader',
     loadChildren: () => import('./pages/loader/loader.module').then( m => m.LoaderPageModule)
   },
-  {
-    path: 'hero',
-    loadChildren: () => import('./pages/hero/hero.module').then( m => m.HeroPageModule)
-  },
+  // {
+  //   path: 'hero',
+  //   loadChildren: () => import('./pages/hero/hero.module').then( m => m.HeroPageModule)
+  // },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
@@ -32,6 +32,10 @@ const routes: Routes = [
   {
     path: 'pickup-call',
     loadChildren: () => import('./pages/pickup-call/pickup-call.module').then( m => m.PickupCallPageModule)
+  },
+  {
+    path: 'add-call',
+    loadChildren: () => import('./pages/add-call/add-call.module').then( m => m.AddCallPageModule)
   }
 ];
 
