@@ -25,7 +25,16 @@ describe('RegisterPage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
+
+  it('should go to the home page', () => {
+    // expect(component).toBeTruthy();
+    spyOn(router, 'navigate');
+
+    component.register();
+    expect(router.navigate).toHaveBeenCalledWith(['home'])
   });
+
 });
