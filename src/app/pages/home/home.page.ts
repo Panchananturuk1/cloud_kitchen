@@ -17,8 +17,8 @@ export class HomePage implements OnInit {
     this.router.navigate(['pickup-call']);
   }
 
-  addCall(){
-    this.router.navigate(['add-call']);
+  pickupCalls(){
+    this.router.navigate(['pickup-calls']);
   }
 
 }

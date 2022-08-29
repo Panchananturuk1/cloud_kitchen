@@ -3,41 +3,32 @@ import { Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
-import { HomePage } from './home.page';
+import { PickupCallCardComponent } from './pickup-call-card.component';
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+describe('PickupCallCardComponent', () => {
+  let component: PickupCallCardComponent;
+  let fixture: ComponentFixture<PickupCallCardComponent>;
   let router: Router;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomePage ],
+      declarations: [ PickupCallCardComponent ],
       imports: [
         IonicModule.forRoot(),
         AppRoutingModule
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(PickupCallCardComponent);
     router = TestBed.get(Router);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    // fixture.detectChanges();
   }));
 
-  it('should go to the pickupcall by clicking se all', () => {
+  it('should go to the pickupcalls by clicking se all', () => {
     spyOn(router, 'navigate');
 
     component.pickupCalls();
     expect(router.navigate).toHaveBeenCalledWith(['pickup-calls'])
   });
-
-
-  it('should go to the pickupcall page on map', () => {
-    spyOn(router, 'navigate');
-
-    component.pickupcall();
-    expect(router.navigate).toHaveBeenCalledWith(['pickup-call']);
-  });
-
 });

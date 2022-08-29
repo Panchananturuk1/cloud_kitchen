@@ -1,12 +1,12 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { PickupCallsPageRoutingModule } from './pickup-calls-routing.module';
 
-import { HomePage } from './home.page';
+import { PickupCallsPage } from './pickup-calls.page';
 import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pickup-call-card.component';
 
 @NgModule({
@@ -14,12 +14,11 @@ import { PickupCallCardComponent } from 'src/app/components/pickup-call-card/pic
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    
+    PickupCallsPageRoutingModule
   ],
   declarations: [
-    HomePage,
+    PickupCallsPage,
     PickupCallCardComponent
   ]
 })
-export class HomePageModule {}
+export class PickupCallsPageModule {}

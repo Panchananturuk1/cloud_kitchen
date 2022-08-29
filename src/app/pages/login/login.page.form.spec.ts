@@ -7,8 +7,8 @@ describe('LoginPageForm', ()=> {
     let form: FormGroup;
 
     beforeEach(()=>{
-        const loginPageForm = new LoginPageForm(new FormBuilder());
-        const form = loginPageForm.createForm();
+        loginPageForm = new LoginPageForm(new FormBuilder());
+        form = loginPageForm.createForm();
     })
 
     it('should create empty login form', ()=>{
